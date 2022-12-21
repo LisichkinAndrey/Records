@@ -42,7 +42,7 @@ namespace records.Controllers
 
         [HttpGet]
         [Route("get_by_name")]
-        public Payment? GetPaymentsBySession(int sessionNumber)
+        public Payment? GetPaymentBySession(int sessionNumber)
         {
             return BLL.GetPaymentBySession(sessionNumber);
         }

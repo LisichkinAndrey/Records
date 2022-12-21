@@ -56,23 +56,23 @@ namespace records.Controllers
 
         [HttpPatch]
         [Route("patch_name")]
-        public void UpdateCustomerName(int partNumber, string newName)
+        public void UpdateCustomerName(int CustomerNumber, string newName)
         {
-            BLL.UpdateCustomerName(partNumber, newName);
+            BLL.UpdateCustomerName(CustomerNumber, newName);
         }
 
         [HttpPatch]
         [Route("patch_phone_number")]
-        public void UpdateCustomerPhoneNumber(int partNumber, string newPhoneNumber)
+        public void UpdateCustomerPhoneNumber(int CustomerNumber, string newPhoneNumber)
         {
-            BLL.UpdateCustomerName(partNumber, newPhoneNumber);
+            BLL.UpdateCustomerName(CustomerNumber, newPhoneNumber);
         }
 
         [HttpDelete]
         [Route("delete_by_num")]
-        public void RemoveCustomer(int partNumber)
+        public void RemoveCustomer(int CustomerNumber)
         {
-            BLL.RemoveCustomer(partNumber);
+            BLL.RemoveCustomer(CustomerNumber);
         }
 
     }
